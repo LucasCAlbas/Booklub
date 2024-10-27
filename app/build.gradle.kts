@@ -13,7 +13,7 @@ android {
     defaultConfig {
         applicationId = "com.android.puc.booklub"
         minSdk = 29
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -42,14 +42,13 @@ android {
 }
 
 dependencies {
-
     //Firebase
-    implementation(platform("com.google.firebase:firebase-bom:33.5.1"))
-    implementation ("com.google.firebase:firebase-auth-ktx")
-    implementation ("com.google.firebase:firebase-firestore-ktx")
-    implementation ("com.google.firebase:firebase-database-ktx")
-    implementation ("com.google.firebase:firebase-storage-ktx")
-    implementation ("com.google.firebase:firebase-functions-ktx")
+    implementation(platform(libs.firebase.bom))
+    implementation (libs.firebase.auth.ktx)
+    implementation (libs.firebase.firestore.ktx)
+    implementation (libs.firebase.database.ktx)
+    implementation (libs.firebase.storage.ktx)
+    implementation (libs.firebase.functions.ktx)
     //Google fonts
     implementation(libs.androidx.ui.text.google.fonts)
 
